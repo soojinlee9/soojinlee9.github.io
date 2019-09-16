@@ -1,0 +1,22 @@
+body {
+  background-color: #EBE8B8;
+  font-family: palatino;
+}
+
+h1 {
+  color: #C93249;
+  font-family: cursive;
+  font-style: italic;
+  font-size: 72px;
+}
+
+.coloredtext {
+  color: #C93249;
+  font-family: sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
