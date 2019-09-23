@@ -1,0 +1,123 @@
+body {
+  background-color: #FEF1D2; /* pale yellow background of whole page */
+  padding: 0;
+  margin: 0;
+  color: #A6866A; /*text color*/
+  font-family: 'Tajawal', sans-serif;
+}
+
+.mainContainer { /*box with text and imgs*/
+  font-size: 24pt;
+  padding-left: 400px; /*moves to the left*/
+  padding-right: 100px; /*moves to right so there is even spacing*/
+  margin: 0px;
+}
+
+.menu { /*side nav bar*/
+  background-color: #DEFDFF; /*light blue*/
+  padding: 10px; /*spacing inside blue box for each link*/
+  width: 250px; /*of blue box*/
+  left: 20px;/*move blue box left to show little of background*/
+  position: fixed;/*so that it doesnt move as we scroll*/
+  height: 100%;/*takes the whole length*/
+  font-size: 20pt;
+  text-align: center;
+  font-weight: bold;
+}
+
+a { /*links inside nav bar*/
+  text-decoration: none;
+  font-weight: BOLD;
+  color: #D93D1A; /*red*/
+}
+
+.navigation {
+  margin: 50px; /*space on side of links*/
+}
+
+.active { /*highlights current page on nav bar*/
+  background-color: #FFCFB0;/*peach*/
+  padding-top: 15px; /*bigger highlight*/
+}
+
+.mainHeader { /*first page*/
+  background-image: url('https://www.worldvision.org/wp-content/uploads/D485-0609-131_527768.jpg');
+  padding-top: 100px; /*space above txt*/
+  padding-bottom: 100px; /*space  below txt*/
+  padding-left: 400px; /*moves txt to left*/
+  color: #FFF; /*white txt*/
+  font-weight: bolder;
+  font-size: 48pt;
+  background-size: cover;
+  background-position: center; /*centers background img*/
+}
+
+.subTitle { /*first pg*/
+  padding-bottom: 20px; /*space below txt box*/
+  border-bottom: 5px solid #69AEB3; /*divider line in darker blue*/
+}
+
+.nine { /*on first page inside subTitle*/
+  color:#D93D1A; /*red*/
+}
+
+.secondHeader { /*pg2&3*/
+  background-image: url('https://webstockreview.net/images/clean-clipart-water-6.png');
+  padding-top: 200px; /*makes img bigger bc makes invisible box with text have space on top*/
+  padding-bottom: 100px;/*space on the bottom of txt box (but there is no text box) so it makes img bigger*/
+  margin-left: 350px; /*moves background img to left*/
+  background-size: cover;
+  background-position: center;
+}
+
+.pageTitle { /*sec and third pg*/
+  padding-bottom: 10px; /*space under txt*/
+  text-align: center;
+  border-bottom: 5px solid #FFCFB0; /*divider line in peach*/
+  font-size: 32pt;
+}
+
+.picContainer { /*pg2*/
+  margin-top: 50px; /*space btwn divider line and first pic*/
+}
+
+.picture { /*pg2*/
+  width: 80%;
+  height: 350px;
+  margin-top: 20px; /*space between imgs*/
+  margin-left: 80px; /*moves left*/
+  background-size: cover;
+  background-position: center;
+}
+
+.centerTxt { /*pg2*/
+  text-align: center;
+  font-size: 20pt;
+  padding: 10px; /*space around text box*/
+  color: #69AEB3; /*darker blue*/
+}
+
+.picture2 { /*pg3*/
+  width: 80%;
+  height: 500px;
+  margin: 20px; /*space around img*/
+  margin-left: 80px;/*moves img left*/
+  background-size: cover;
+  background-position: center;
+}
+
+.smallContainer { /*pg3*/
+  box-sizing: border-box; /*makes border according to my specifications*/
+  background-color: #FDE0A1; /*yellow*/
+  padding: 10px; /*yellow border that you see */
+  margin-top: 50px; /*space between divider line and yellow border*/
+  margin-bottom: 100px; /*space to bottom of pg*/
+}
+
+.smallContent { /*pg3, inside smallContainer*/
+  box-sizing: border-box;
+  margin: 5px; /*space outside this box*/
+  padding: 10px; /*space inside this box (between box and img)*/
+  background-color: #D9AF8B;
+  color: #F2F1DF;
+}
