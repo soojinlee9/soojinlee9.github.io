@@ -1,0 +1,138 @@
+body {
+  background-color: #FEF1D2; /*cream color background for page*/
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Work Sans', sans-serif;
+  color: #A6866A; /*brown font color*/
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: column; /*box of one column*/
+  justify-content: center; /*centers content in this box*/
+}
+
+.header{ /*pg2&pg3 image at top*/
+  margin: 0 10vmin 0 10vmin; /*gives space on the side of image*/
+  display: flex;
+  height: 40vh;
+  background-image: url('https://webstockreview.net/images/clean-clipart-water-6.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.menu{
+  display: flex;
+  background-color: #FFCFB0; /*peach*/
+  justify-content: space-around; /*even space between the three navigation words*/
+  align-items: center; /*vertically center*/
+  height: 10vh;
+  font-size: 22px;
+  font-weight: bold;
+  padding-right: 90px; /*pads from the right*/
+  padding-left: 40px; /*pads from left THESE WERE TO PUT NAV WORDS UNDER EACH IMAGE OF HEADER*/
+}
+
+a {
+  text-decoration: none; /*no underline*/
+  color: #D93D1A; /*red*/
+}
+
+.active{
+  background-color: #DEFDFF; /*highlights current page name on nav bar light blue*/
+  padding: 15px; /*makes highlight bigger*/
+}
+
+.imgBlock{ /*pg 1 dirty water img*/
+  display: flex;
+  height: 100vh;
+  background-image: url('https://www.worldvision.org/wp-content/uploads/D485-0609-131_527768.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-end; /*put words to the right*/
+  align-items: flex-end; /*put words on bottom*/
+  color: #FFF; /*white*/
+  font-size: 72px;
+}
+
+.statements{
+  margin: 0 10vmin 0 10vmin; /*space around the sides*/
+}
+.subTitle{
+  display: flex;
+  flex-direction: column; /*contents of this box in one column*/
+  border-bottom: 5px dotted #69AEB3; /*dotted divider line in darker blue*/
+  font-size: 32px;
+  text-align: center; /*centers text*/
+  padding-bottom: 20px; /*space between words and border line*/
+}
+
+.smallStatement{
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  text-align: center;
+}
+
+.videoWW{
+  display: flex;
+  justify-content: center; /*horizontally centers video*/
+  height: 60vh;
+}
+
+.smallContent{
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  width: 100% /*full width of box*/
+}
+
+.threeRow{
+  display:flex;
+  flex-direction: row; /*everything in this box in one row*/
+  margin-top: 10px; /*space at top*/
+}
+
+.threeRowRev{
+  display:flex;
+  flex-direction: row-reverse; /*everything in this box in one row but REVERSE order of contents*/
+  margin-top: 10px;
+}
+
+.picture{
+  display: flex;
+  background-size: cover;
+  background-position: center;
+}
+
+.picTxt{
+  display: flex;
+  align-items: center; /*vertically centers text*/
+  text-align: center; /*horizontally centers text*/
+  margin: 50px; /*space around text*/
+  font-size: 24px;
+
+}
+
+.smallContent2{ /*pg3*/
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row; /*puts things in this box in one row*/
+  align-items:center;
+  width: 100%;
+}
+
+.textP{
+  text-align: center;
+  font-size: 22px;
+}
+
+.footer{
+  display: flex;
+  justify-content:flex-end; /*puts at the right side*/
+  background-color:#A6866A;/*brown*/
+  color: #FFF;
+  margin-top: 10px; /*space above*/
+  padding-right: 20px; /*pads at the right*/
+}
