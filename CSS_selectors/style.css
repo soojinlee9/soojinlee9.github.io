@@ -1,0 +1,78 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+*{ /*all*/
+  font-family: sans-serif;
+  background-color:#BE72FF; /*purple*/
+}
+
+.mainContainer, h1, .imgRow, .picture, .smallContainer, h2, .twoCol { /*all of these should be flex*/
+  display: flex;
+}
+
+.mainContainer, h1, h2, .smallContainer{ /*all of these should be centered*/
+  justify-content: center;
+}
+
+.mainContainer{ /*everything inside this class should be*/
+  flex-direction: column; /*one column*/
+  border: 5px solid #42D2FF; /*border around the whole page*/
+}
+
+.header h1{ /*h1 tags inside header class*/
+  font-size: 72px;
+}
+
+.imgRow{
+  width: 100%; /*take the whole width*/
+}
+
+.imgRow .picture{ /*all picture classes inside imgRow should be*/
+  flex-direction: row; /*one row*/
+  justify-content: space-around; /*with space around each picture class*/
+  width: 33%; /*and each with a width of 33% of the imgRow class*/
+}
+
+.smallContainer{
+  margin: 10px 30px 10px 30px; /*margin of 10px at top and bottom and 30px at left and right*/
+}
+
+.section1 h2{ /*h2 tags inside section1 class should have*/
+  border-bottom: 5px solid #42D2FF; /*solid border on the bottom, blue */
+  font-size: 36px;
+}
+
+.section1 .twoCol{ /*twoCol class inside section1 class should be*/
+  flex-direction: row; /*one row*/
+}
+
+.picture{
+  flex-direction: column; /*one column*/
+}
+
+.txtCol{
+  padding-top: 60px; /*space at the top*/
+  padding-left: 20px; /*space on the left*/
+}
+
+.txtCol > p{ /*all p tags whose parent is .txtCol class*/
+  font-size: 22px;
+}
+
+p + p { /*all p tags directly after another p tag*/
+  margin-top: 125px; /*space at the top*/
+}
+
+.p1:hover{ /*when mouse is hovering over p1 class*/
+  background-color: #FF0000; /*background color is red*/
+}
+
+.p2:hover{ /*when mouse is hovering over p2 class*/
+  background-color:#FFFB66;/*background color is yellow*/
+}
+
+.p3:hover{ /*when mouse is hovering over p3 class*/
+  background-color:#00FF00; /*background color is green*/
+}
