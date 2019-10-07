@@ -1,0 +1,147 @@
+body{
+  background-color: #ECEBE9; /*off white background for entire page*/
+
+}
+
+*{  /*everything*/
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.txtBox, .ifYou, .harrymain, .smallContent{  /*these have one column of content*/
+  flex-direction: column;
+}
+
+.believe, .and, .doit, .bcsthats, .getit{  /*these text are colored  */
+  color: #595959; /*dark gray*/
+}
+
+.youcandoit, .gooutthere, .the, .way, .only, .urgonna, .harrymain{  /*these are colored*/
+  color: #D95043; /*red*/
+}
+
+.gooutthere, .bcsthats, .only, .urgonna{  /*these have a solid dark gray border on top*/
+  border-top: 1.5px solid #595959;
+}
+
+.smallContent{  /*text inside row with images and text*/
+  background-image: url('circle1.jpeg'); /*background image of red cirlce*/
+  background-size: cover;
+  background-position: center;
+  width: 15vmin;  /*sets width of background image*/
+  height: 15vh;  /*height of background image*/
+  margin-bottom: 30px;  /*space on top*/
+  margin-top: 20px; /*space on bottom*/
+}
+
+.ifYou{
+  color: #FFF;  /*white*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1;  /*space between lines*/
+  align-items: center;  /*vertically center*/
+}
+
+.believe{
+  font-family: 'Satisfy', cursive;
+  font-size: 130px;
+  line-height: 0.5;
+}
+
+.youcandoit{
+  justify-content: flex-end;  /*align to the right side*/
+  font-family: 'Volkhov', serif;
+  font-size: 35px;
+  text-shadow: 2px 2px #F2A29B; /*text shadow in pink*/
+}
+
+.gooutthere{
+  font-family: 'Lato', sans-serif;
+  font-size: 55px;
+  font-weight: bold;  /*bold font*/
+}
+
+.anddoit{
+  flex-flow: row wrap;  /*puts two classes inside this class into one row with wrapping*/
+  font-size: 180px;
+  font-weight: bold;
+  line-height:0.9;
+}
+
+.and{
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.doit{
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.bcsthats{
+  font-family: 'Rokkitt', serif;
+  font-size: 55px;
+  line-height: 0.9;
+}
+
+.threeCol{
+  flex-direction: row;  /*puts everything in this class in one row*/
+  align-items: center;  /*vertically center*/
+  justify-content: space-between;  /*pushes side images all the way to the sides and centers middle content*/
+}
+
+.leftB{
+  justify-content:flex-start;  /*aligns to the left*/
+  width: 30%;
+}
+
+.rightB{
+  justify-content:flex-end;  /*aligns to the right*/
+  width: 30%;
+
+}
+
+.the, .way{  /*these two*/
+  font-family: 'Rouge Script', cursive;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.the{
+  line-height:0.8;
+}
+
+.way{
+  line-height:1.2;
+}
+
+.only{
+  flex-direction: column;
+  font-family: 'Heebo', sans-serif;
+  font-size: 170px;
+  line-height: 0.9;
+  -webkit-text-stroke: 4px #595959; /*text outline in dark gray*/
+  border-bottom: 1.5px solid #595959;  /*solid dark gray border on the bottom of text*/
+}
+
+.urgonna{
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 105px;
+  line-height: 0.9;
+}
+
+.getit{
+  font-family: 'Ultra', serif;
+  font-size: 105px;
+  line-height: 0.8;
+}
+
+.harrymain{
+  font-family: 'Rokkitt', serif;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.harrymain p{  /*all p tags inside .harrymain class*/
+  line-height:0.7;
+}
