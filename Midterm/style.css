@@ -1,0 +1,316 @@
+body { /*everything in the body*/
+  margin: 0px;
+  padding: 0vmin 5vmin 0vmin 5vmin; /*left and right padding*/
+  font-family: 'Handlee', cursive;
+  background-color: #FFFDF5; /*light cream*/
+}
+
+.grid1{
+  display: grid;
+  grid-template-columns: repeat(6,1fr); /*6 columns*/
+  grid-template-rows: repeat(4, 0.25fr) 0.1fr; /*4 rows of equal space and 1 smaller row*/
+}
+
+.header {
+  display: grid;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  text-align: center; /*centers text*/
+  color: white;
+  -webkit-text-stroke: 1px #BF8941; /*outline for text in tan*/
+  font-size: 40px;
+  line-height: 0.9; /*decreases spacing between lines*/
+  grid-column: 2/6; /*column line 2 to 6*/
+  grid-row: span 3; /*span 3 rows*/
+  letter-spacing: 10px; /*space between letters*/
+  background-color: #FFFDF5; /*same as page background color*/
+}
+
+button{
+  border: none; /*no border outline*/
+  border-radius: 8px; /*rounded border*/
+}
+
+h1{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+a, a:visited{
+  text-decoration: none; /*no underline*/
+  color: white;
+  -webkit-text-stroke: 1px #BF8941; /*text outline in tan*/
+}
+
+.nav{ /*'take a class'*/
+  display: grid;
+  grid-column: 6; /*col 6*/
+  grid-row: 4; /*row 4*/
+  align-items: center; /*vertically center*/
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 1px;
+  justify-self: center; /*centers inside column*/
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav:hover, .loc:hover{ /*when mouse is over .nav class and .loc class*/
+  background-color: #E8F0F6; /*background color to light blue*/
+}
+
+.loc { /*address*/
+  display: grid;
+  grid-column: span 2; /*span 2 col*/
+  grid-row: 4; /*row 4*/
+  align-items: center; /*vertically */
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 1px;
+  margin-right: 70px; /*gets rid of extra space in column span*/
+  justify-self: center;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 0.5fr repeat(9, 1fr) 0.5fr; /*2 colums of 0.5 on each end and 9 even columns in between*/
+  grid-template-rows: repeat(10, 5em); /*10 rows*/
+}
+
+.mainImg {
+  display: grid;
+  grid-column: 1/12; /*cover from col line 1 to 12*/
+  grid-row: 1/8; /*row line 1 to 8*/
+  height: 75vh;
+  background-image: url('https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F99F8E84D5CA990591B');
+  background-position: center;
+  background-size: cover;
+}
+
+.txt {
+  display: grid;
+  border: 5px solid #BF8941; /*thick border tan*/
+  grid-column: 2/11;
+  grid-row: 2/11;
+  text-align: center;
+  outline: 2px solid #BF8941; /*thin border tan*/
+  outline-offset: 10px; /*space between border lines*/
+}
+
+.txt p { /*all p inside .txt class*/
+  display: grid;
+  grid-row: 15;
+  font-size: 22px;
+  padding: 450px 10px 0px 10px; /*lots of padding bc I wanted a border around txt that is below mainImg but the border starts inside mainImg*/
+}
+
+.grid3 {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: 0.5fr repeat(9, 1fr) 0.5fr; /*2 colums of 0.5 on each end and 9 even columns in between*/
+  grid-row-gap: 5vmin; /*space between rows (wanted this only in this grid because I wanted space between images)*/
+  background-color: #E8F0F6; /*light blue*/
+  margin-top: 20px; /*so that is doesn't over lap with above border lines*/
+  padding-bottom: 15px; /*space below images*/
+}
+
+.subt2{
+  display: grid;
+  grid-column: 2/11;
+  grid-row: span 1;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  color: #19288A; /*dark blue*/
+}
+
+.grid3 h1{
+  margin-bottom: -20px; /*decrease space between subt2 and images*/
+}
+
+.picT{ /*top row of images, used different width % and alignments to create relatively even spacing*/
+  display: grid;
+  grid-column: 2/5;
+  grid-row: span 3;
+  width: 90%;
+  height: auto;
+}
+
+.picT2{
+  display: grid;
+  grid-column: 5/8;
+  grid-row: span 3;
+  width: 95%;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+}
+
+.picT3{
+  display: grid;
+  grid-column: 8/11;
+  grid-row: span 3;
+  width: 90%;
+  height: auto;
+  justify-self: end;
+}
+
+.picB{ /*bottom row of images*/
+  display: grid;
+  grid-column: 2/6;
+  grid-row: span 3;
+  width: 105%;
+  height: auto;
+  justify-self: start;
+  align-self: end;
+}
+
+.picB2{
+  display: grid;
+  grid-column: 7/11;
+  grid-row: span 3;
+  width: 105%;
+  height: auto;
+  justify-self: end;
+  align-self: end;
+}
+
+.grid4{ /*4th grid*/
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: 0.5fr repeat(9, 1fr) 0.5fr;/*2 colums of 0.5 on each end and 9 even columns in between*/
+  margin-top: 15px; /*space between end of grid3 and this grid*/
+}
+
+.subtitle {
+  display: grid;
+  grid-column: 2/4;
+  grid-row: span 1;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  color: #19288A; /*dark blue*/
+}
+
+.description {
+  display: grid;
+  grid-column: 2/4;
+  grid-row: span 1;
+  text-align: center;
+  align-self: center;
+  font-size: 20px;
+}
+
+.WWF{
+  display: grid;
+  grid-column: 2/4;
+  grid-row: span 1;
+  background-color: #F5DEC8; /*beige*/
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 1px;
+}
+
+h3 {
+  margin: 0px; /*no extra spacing in beige box*/
+}
+
+.WWF a,a:visited{ /*keeps link whether visited or not to be the same color*/
+  color: #BF8941;/*tan*/
+  -webkit-text-stroke: 1px #BF8941; /*tan*/
+}
+
+.v1{ /*vertical line*/
+  display: grid;
+  grid-column: 4;
+  grid-row: 2/5;
+  border-left: 3px solid #BF8941; /*makes line visible color tan*/
+  justify-self: center;
+  margin-bottom: 10px; /*creates space from footer*/
+}
+
+.img1 {/*ocean whale img*/
+  display: grid;
+  grid-column: 4/9;
+  grid-row: 2; /*second row of thie grid*/
+  width: 80%;
+  height: auto;
+  justify-self: end; /*aligns from the end of column*/
+  align-self: center; /*vert center*/
+}
+
+.img2 {/*whole whale img, overlay wanted*/
+  display: grid;
+  grid-column: 7/11;
+  grid-row: 2;
+  width: 70%;
+  height: auto;
+  justify-self: end;
+  align-self: end; /*vertically aligns from the end of row creating overlay*/
+}
+
+
+.txt2{ /*small txt next to imgs*/
+  display: grid;
+  grid-column: 9/11;
+  grid-row: 2;
+  text-align: center;
+  padding-left: 10px; /*creates even spacing from images*/
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.footer{
+  display: grid;
+  grid-row: span 1; /*one row*/
+  grid-column: span 11;  /*all columns*/
+  background-color: #BF8941; /*tan*/
+}
+
+.footer p{
+  display: grid;
+  grid-column: 10/11; /*text at the end*/
+  justify-self: center; /*centers text within the 2 cols*/
+}
+
+/*page2*/
+.imgL, .imgR { /*left and right images*/
+  display: grid;
+  grid-row: span 2;
+  width: 80%;
+  height: auto;
+  align-self: center;
+}
+
+.imgL{ /*left images*/
+  grid-column: 7/9;
+}
+
+.imgR { /*right images*/
+  grid-column: 9/11;
+}
+
+.description2 {
+  display: grid;
+  grid-column: 2/6;
+  grid-row: span 4;
+  text-align: center;
+  font-size: 20px;
+  align-self: center;
+}
+
+.h1{ /*horizontal line*/
+  display: grid;
+  grid-column: 2/11;
+  grid-row: span 1;
+  border-top: 3px solid #BF8941; /*tan*/
+}
+
+.imgP { /*img for private class*/
+  display: grid;
+  grid-column: 7/11;
+  grid-row: span 2;
+  width: 90%;
+  height: auto;
+}
