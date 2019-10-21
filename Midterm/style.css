@@ -53,6 +53,29 @@ a, a:visited{
   justify-self: center; /*centers inside column*/
   padding-left: 10px;
   padding-right: 10px;
+  position: relative;
+  color: #BF8941; /*tan*/
+  -webkit-text-stroke: 1px #BF8941; /*tan*/
+}
+
+.content{ /*dropdown menu*/
+  display: none; /*doesn't show unless hovered*/
+  position: absolute;
+  background-color: #E8F0F6;;
+  min-width: 160px;
+  z-index:1;
+}
+
+.content a{ /*inside dropdown menu*/
+  display: block;
+}
+
+.content a:hover{ /*when hovered over*/
+  background-color: #FFFDF5; /*light cream*/
+}
+
+.nav:hover .content{ /*show dropdown when hovered*/
+  display: block;
 }
 
 .nav:hover, .loc:hover{ /*when mouse is over .nav class and .loc class*/
@@ -134,6 +157,11 @@ a, a:visited{
   grid-row: span 3;
   width: 90%;
   height: auto;
+  transition: transform .02s;
+}
+
+.picT:hover {
+  transform: scale(1.5);
 }
 
 .picT2{
