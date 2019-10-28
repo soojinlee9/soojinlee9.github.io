@@ -108,7 +108,7 @@ a, a:visited {
   display: grid;
   grid-row: 15;
   font-size: 3.5vmin;
-  padding: 250px 10px 0px 10px;  /*lots of padding bc I wanted a border around txt that is below mainImg but the border starts inside mainImg*/
+  padding: 450px 10px 0px 10px;  /*lots of padding bc I wanted a border around txt that is below mainImg but the border starts inside mainImg*/
 }
 
 .grid3 {
@@ -413,7 +413,6 @@ h3 {
     display: grid;
     grid-column: 1/12;    /*cover from col line 1 to 12*/
     grid-row: 1/8;    /*row line 1 to 8*/
-    height: 75vh;
     background-image: url('https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F99F8E84D5CA990591B');
     background-position: center;
     background-size: cover;
