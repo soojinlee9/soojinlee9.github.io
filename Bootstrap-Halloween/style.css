@@ -30,12 +30,19 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-.cover-container {
+.container {
+  display: grid;
+  grid-template-columns: 2;
+  grid-column: span 2;
+}
+
+.col-lg {
   max-width: 52em;
   background-image: url('image1.jpg');
   background-position: center;
   background-size: cover;
 }
+
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
@@ -43,16 +50,19 @@ body {
 
 .lead {
   text-align: center;
-  color: #F2B33D; /*yellow*/
+  color: #F2B33D;
+  /*yellow*/
   font-family: 'Creepster', cursive;
 }
 
 /*my style*/
 #header {
-  color: #F2B33D; /*yellow*/
+  color: #F2B33D;
+  /*yellow*/
   font-family: 'Butcherman', cursive;
   text-align: center;
-  text-shadow: 4px 4px #F25F29; /*text shadow orange*/
+  text-shadow: 4px 4px #F25F29;
+  /*text shadow orange*/
 }
 
 .col-sm h1 {
@@ -61,15 +71,18 @@ body {
 }
 
 #date {
-  color: #F25F29; /*orange*/
+  color: #F25F29;
+  /*orange*/
   font-family: 'Creepster', cursive;
-  text-shadow: -4px 4px #333; /*text shadow gray*/
+  text-shadow: -4px 4px #333;
+  /*text shadow gray*/
   text-align: end;
   margin-top: 20px;
 }
 
 #time {
-  color: #F25F29;/*orange*/
+  color: #F25F29;
+  /*orange*/
   text-shadow: -4px 4px #333;
   font-family: 'Creepster', cursive;
   text-align: end;
@@ -77,11 +90,11 @@ body {
 
 .col-sm h2 {
   font-size: 3rem;
-
 }
 
 #place {
-  color: #F2B33D; /*yellow*/
+  color: #F2B33D;
+  /*yellow*/
   font-family: 'Creepster', cursive;
   text-align: center;
   margin-top: 50px;
@@ -91,51 +104,119 @@ body {
   font-size: 2.5rem;
 }
 
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
 
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
 
-@media (min-width: 600px) {
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
 
-  .cover-container { /*places container in middle of page*/
-    margin-left: 300px;
-    margin-right: 300px;
+.carousel-item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
 
+.col-5 {
+  flex: none;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+#center {
+  margin-bottom: 110px;
+}
+
+#center2 {
+  margin-bottom: 110px;
+}
+
+#center3 {
+  margin-bottom: 90px;
+}
+
+#center4 {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1000px) {
+  .col-lg {
+    background-image: url('image1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
   }
 
   .col-sm h1 {
+    margin-top: 10px;
     font-size: 5rem;
     line-height: 70px;
   }
 
   #date {
-    margin-top: -30px;
+    margin-top: 120px;
+    margin-bottom: 20px;
   }
 
   #time {
     text-align: start;
-    margin-top: -30px;
+    margin-top: 120px;
+    margin-bottom: 20px;
   }
 
   #place {
     margin-top: -22px;
   }
 
-  .col-sm h2 {
+  .col-sm h2, .col-4 h2 {
     font-size: 3.5rem;
     line-height: 65px;
-    padding-top: 200px;
   }
 
   .col-sm h3 {
     font-size: 2.5rem;
     line-height: 75px;
-    padding-top: 160px;
+    padding-top: 120px;
     text-align: center;
-    padding-right: 195px;
   }
 
   .btn-secondary {
-    margin-top: 25px;
+    margin-top: 5px;
   }
 
+  .col-5 {
+    width: 50%;
+    align-self: center;
+  }
 
+  #center {
+    margin-bottom: 100px;
+  }
+
+  #center2 {
+    margin-bottom: 80px;
+  }
+
+  #center3 {
+    margin-bottom: 60px;
+  }
+
+  #center4 {
+    margin-bottom: 10px;
+  }
 }
