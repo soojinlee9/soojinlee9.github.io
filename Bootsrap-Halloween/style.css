@@ -1,0 +1,141 @@
+/*given*/
+a,
+a:focus,
+a:hover {
+  color: #F2B33D;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+  background-color: #e65100;
+  border: .05rem solid #fff;
+  margin-top: 170px;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 52em;
+  background-image: url('image1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.lead {
+  text-align: center;
+  color: #F2B33D; /*yellow*/
+  font-family: 'Creepster', cursive;
+}
+
+/*my style*/
+#header {
+  color: #F2B33D; /*yellow*/
+  font-family: 'Butcherman', cursive;
+  text-align: center;
+  text-shadow: 4px 4px #F25F29; /*text shadow orange*/
+}
+
+.col-sm h1 {
+  line-height: 50px;
+  font-size: 3.5rem;
+}
+
+#date {
+  color: #F25F29; /*orange*/
+  font-family: 'Creepster', cursive;
+  text-shadow: -4px 4px #333; /*text shadow gray*/
+  text-align: end;
+  margin-top: 20px;
+}
+
+#time {
+  color: #F25F29;/*orange*/
+  text-shadow: -4px 4px #333;
+  font-family: 'Creepster', cursive;
+  text-align: end;
+}
+
+.col-sm h2 {
+  font-size: 3rem;
+
+}
+
+#place {
+  color: #F2B33D; /*yellow*/
+  font-family: 'Creepster', cursive;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.col-sm h3 {
+  font-size: 2.5rem;
+}
+
+
+
+@media (min-width: 600px) {
+
+  .cover-container { /*places container in middle of page*/
+    margin-left: 300px;
+    margin-right: 300px;
+
+  }
+
+  .col-sm h1 {
+    font-size: 5rem;
+    line-height: 70px;
+  }
+
+  #date {
+    margin-top: -30px;
+  }
+
+  #time {
+    text-align: start;
+    margin-top: -30px;
+  }
+
+  #place {
+    margin-top: -22px;
+  }
+
+  .col-sm h2 {
+    font-size: 3.5rem;
+    line-height: 65px;
+    padding-top: 200px;
+  }
+
+  .col-sm h3 {
+    font-size: 2.5rem;
+    line-height: 75px;
+    padding-top: 160px;
+    text-align: center;
+    padding-right: 195px;
+  }
+
+  .btn-secondary {
+    margin-top: 25px;
+  }
+
+
+}
