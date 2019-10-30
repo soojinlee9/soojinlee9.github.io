@@ -57,8 +57,7 @@ body {
 
 /*my style*/
 #header {
-  color: #F2B33D;
-  /*yellow*/
+  color: #F2B33D; /*yellow*/
   font-family: 'Butcherman', cursive;
   text-align: center;
   text-shadow: 4px 4px #F25F29;
@@ -113,6 +112,9 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  color: #F25F29; /*yellow*/
+  font-family: 'Butcherman', cursive;
+
 }
 
 /* Declare heights because of positioning of img element */
