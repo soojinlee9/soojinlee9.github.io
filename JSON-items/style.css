@@ -1,0 +1,99 @@
+body { /*entire page has this background image and font*/
+  background-image: url('https://i.pinimg.com/originals/f4/36/05/f436054ad4e780016f1a4420bfd0ffa6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+h2 { /*the full names shown when hovered*/
+  font-family: 'McLaren', cursive;
+  color: #FFDE47; /*yellow*/
+  -webkit-text-stroke: 0.5px black; /*outling in black*/
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#mainContainer { /*big container shown*/
+  margin: 65px 20px 10px 20px;
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.5); /*transparent white background*/
+  grid-template-columns: repeat(5, 1fr); /*5 cols*/
+  grid-template-rows: repeat(3, 0.5fr) 0.1fr; /*4 rows*/
+}
+
+
+#mainContainer:hover .middle { /*when mouse is over mainContainer, middle content is not shown*/
+  display: none;
+}
+
+#mainContainer:hover { /*when mouse is over mainContainer*/
+  grid-template-rows: repeat(3,1fr); /*3 rows*/
+  background-color: rgba(255, 255, 255, 0.7); /*less transparent white background*/
+}
+
+#mainContainer:hover ~ #grd { /*when mouse is over mainContainer then show grd container*/
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(5, 1fr); /*5 cols*/
+  margin: -500px 20px 10px 20px; /*big negative number makes words go into the white background*/
+}
+
+#grd { /*when mouse is not hovered over mainContainer, dont show grd container*/
+  display: none;
+}
+
+#mainContainer:hover .grdContent { /*when mouse is over mainContainer, then show grd content*/
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  color: #D80B00; /*red*/
+  text-shadow: -2px 2px black; /*black shadow on the left and botton*/
+  -webkit-text-stroke: 0.5px black; /*black outline*/
+  font-size: 4em;
+  text-align: center;
+  display: grid;
+  grid-column: span 5; /*place in center of 5 cols*/
+
+}
+
+.middle {
+  display: grid;
+  grid-column: span 5; /*take up 5 cols*/
+  grid-row: span 2; /*take up 2 rows*/
+}
+
+.homer, .marge, .bart, .lisa, .maggie {
+  display: grid;
+  grid-row: 2/4; /*take up rows 2 and 3*/
+  align-items: end; /*vertically line up from bottom*/
+  justify-self: center;
+}
+
+.homer {
+  grid-column: 1;
+}
+
+.marge {
+  grid-column: 2;
+}
+
+.bart {
+  grid-column: 3;
+}
+
+.lisa {
+  grid-column: 4;
+}
+
+.maggie {
+  grid-column: 5;
+}
+
+.subt { /*name shown on default*/
+  display: grid;
+  grid-row: 4;
+  text-align: center;
+  font-family: 'McLaren', cursive;
+}
