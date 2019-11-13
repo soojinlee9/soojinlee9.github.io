@@ -1,0 +1,45 @@
+body {
+  background-image: url('background1.png');
+  background-position: top; /*shows full image*/
+  background-repeat: no-repeat;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center; /*centers content inside*/
+  flex-direction: column; /*one column*/
+  margin: 200px 20px 20px 20px; /*aligns penguin to background image*/
+}
+
+#parker {
+  display: flex;
+  justify-content: center; /*center of container*/
+  align-items: center;
+}
+
+#item1 { /*because position of images are absolute, flexbox and grid do not work*/
+  display: flex;
+  justify-content: flex-end; /*these do not work correctly but are placed to scatter items*/
+  align-items: center;
+}
+
+#item2 { /*because position of images are absolute, flexbox and grid do not work*/
+  display: flex;
+  justify-content: flex-start; /*these do not work correctly but are placed to scatter items*/
+  align-items: flex-end;
+}
+#item3 { /*because position of images are absolute, flexbox and grid do not work*/
+  display: flex;
+  justify-content: flex-end; /*these do not work correctly but are placed to scatter items*/
+  align-items: flex-end;
+}
+
+h2 {
+  display: flex;
+  justify-content: center; 
+  font-family: 'Patrick Hand', cursive;
+  color: green;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
