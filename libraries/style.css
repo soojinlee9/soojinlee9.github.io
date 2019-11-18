@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+}
+
+.mainContainer {
+  margin: 20px 20px 20px 20px;
+  padding: 0px 10px 20px 10px;
+  border: 5px solid blue;
+  background-image: url('question.jpg');
+}
+
+h1 {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.gifs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.guess {
+  padding-top: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: black;
+
+}
+
+.left {
+  justify-self: flex-start;
+}
+
+.right {
+  justify-self: flex-end;
+
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+.result {
+  background-image: url('question.jpg');
+  text-align: center;
+}
+
+#correct, #wrong {
+  width: 200px;
+  height: 200px;
+  font-size: 4rem; /*size of icons*/
+}

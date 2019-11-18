@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Number Guesser.</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="mainContainer">
+    <h1>Choose a number from 1 to 5 and scroll down</h1>
+    <div class="gifs">
+      <img src="https://media.giphy.com/media/3aIGjbZ6kWe1q/giphy.gif">
+      <img src="https://media.giphy.com/media/3aIGjbZ6kWe1q/giphy.gif">
+    </div>
+  </div>
+
+  <div class="guess rellax" data-rellax-speed="5"> <!--move entire container-->
+
+    <img class="rellax left" data-rellax-speed="5" src="two.png">
+    <p>b</p> <!--empty column-->
+    <img class="rellax right" data-rellax-speed="4" src="five.png">
+    <img class="rellax left" data-rellax-speed="9" src="three.png">
+    <img class="rellax left" data-rellax-speed="10" src="one.jpg"> <!--moves fastest (keeps 1 in center)-->
+    <img class="rellax right" data-rellax-speed="9" src="four.png">
+
+  </div>
+
+  <div class="result">
+    <h1 id="answer"></h1>
+    <button id="correct"><i class="fa fa-thumbs-up"></i></button>
+    <button id="wrong"><i class="fa fa-thumbs-down"></i></button>
+    <p id="gif"></p> <!--displays this gif id when button is pressed-->
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
