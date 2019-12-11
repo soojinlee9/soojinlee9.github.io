@@ -31,14 +31,14 @@ body, html {
   font-family: 'Megrim', cursive;
   margin: 0px 50px; /*used to change location of title*/
   font-size: 4rem;
-  color: #457DB0;
+  color: #656687;
 }
 
 #subtitle {
   font-family: 'Megrim', cursive;
   margin: 0px 0px 0px 90px; /*moves subtitle to right by 90px*/
   font-size: 2rem;
-  color: #457DB0;
+  color: #656687;
 }
 
 .about {
@@ -61,6 +61,8 @@ body, html {
   background-size: cover;
   width: 300px;
   height: 300px;
+  outline: solid #FFF8E8 5px;
+  outline-offset: 5px;
 }
 
 #meals {
@@ -82,7 +84,7 @@ a {
 }
 
 .active {
-  text-decoration: underline #457DB0; /*blue underline on active page*/
+  text-decoration: underline #656687; /*blue underline on active page*/
 }
 
 .txt {
@@ -116,6 +118,10 @@ img {
   width: 300px; /*size of all images*/
 }
 
+.shadow:hover {
+  opacity: 0.8;
+}
+
 .shadow {
   box-shadow: 5px 5px 5px #ccc; /*drop shadow on img tags (placed here instead of under img above so that lightbox img doesnt also have drop shadow)*/
 }
@@ -125,12 +131,12 @@ h2 {
 }
 
 form {
-  border: 3px solid #457DB0;
+  border: 3px solid #656687;
   font-family: Arial;
 }
 
 .container {
-  background-color: #457DB0;
+  background-color: #656687;
 }
 
 input[type=text], input[type=submit] {
@@ -142,7 +148,7 @@ input[type=text], input[type=submit] {
 
 input[type=submit] {
   background-color: #FFF8E8;
-  color: #457DB0;
+  color: #656687;
   border: none;
 }
 
@@ -153,7 +159,7 @@ input[type=submit]:hover {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #457DB0;
+  background-color: #656687;
   text-align: center;
 }
 
