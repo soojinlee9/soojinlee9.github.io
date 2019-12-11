@@ -8,6 +8,11 @@ body, html {
   height: 100%; /*puts hero image on index page*/
 }
 
+.fancybox-caption {
+  font-size: 25px;
+  padding: 0px 0px 100px 0px;
+}
+
 .main {
   background-image: url('IMG_4206.jpg');/*hero image*/
   background-position: center;
@@ -172,6 +177,10 @@ input[type=submit]:hover {
     padding-top: 100px;
     padding-bottom: 100px;
     margin: 0px 150px;
+  }
+
+  .fancybox-caption {
+    padding: 75px 45px 25px;
   }
 
   h3 {

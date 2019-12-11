@@ -8,7 +8,6 @@ imagesLoaded( grid ).on( 'progress', function() { // layout Masonry after each i
   msnry.layout();
 });
 
-
 $('[data-fancybox="images"]').fancybox({ //to add clickable link to yelp inside caption
   caption : function( instance, item ) {
     var caption = $(this).data('caption') || '';
