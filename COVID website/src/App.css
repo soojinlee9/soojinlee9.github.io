@@ -1,0 +1,97 @@
+
+a {
+  color :black; 
+  text-decoration: none; /*no underline*/
+}
+
+body {
+  background-color: #12120D;
+  margin: 0;
+  padding: 0 20px; /*padding on left and right*/
+}
+
+.cases{
+  border-radius: 25px; /*rounded corners*/
+  color: #8A959C;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.cases:hover {
+  background-color:#BD201A;
+}
+
+.cases:hover h1{ /* both numbers in this div change font color*/
+  color: #8A959C;
+}
+
+.covidData {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.deaths{
+  color: #8A959C;
+  border-radius: 25px;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.deaths:hover {
+  background-color:#FFFBF2;
+
+}
+.deaths:hover h1{
+  color: #8A959C;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.header {
+  color: #8A959C;
+  text-align: center;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.numCase {
+  color: #BD201A; /*font color when not hovered*/
+}
+
+.numDeaths{
+  color: #FFFBF2;
+}
+
+.numTodayCase {
+  color: #E1521A;
+}
+
+.numTodayDeaths {
+  color: #B8BFB8;
+}
+
+.recovered{
+  /* background-color: rgba(54, 214, 70, 0.5); */
+  border-radius: 25px;
+  color: #8A959C;
+  padding: 0px 20px;
+  text-align: center;
+}
