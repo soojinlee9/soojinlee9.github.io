@@ -21,8 +21,8 @@ function Home() {
     }, [country]); //once country is loaded
 
     //used to style the color of recovered div background
-    const totalCases = countryData.Countries&&countryData.Countries[217].TotalConfirmed; //number value of total confirmed
-    const totalRecovered = countryData.Countries&&countryData.Countries[217].TotalRecovered; //number value of total recovered
+    const totalCases = countryData.Countries&&countryData.Countries[219].TotalConfirmed; //number value of total confirmed
+    const totalRecovered = countryData.Countries&&countryData.Countries[219].TotalRecovered; //number value of total recovered
     const greenFill = (totalRecovered / totalCases * 15).toFixed(2); //rounds to the nearest hundredth
 
     return (
