@@ -12,7 +12,7 @@ const Chart = () => {
 
     useEffect(() => {
         //request to get data from api and stores in array
-        axios.get(`https://corona.lmao.ninja/states`)
+        axios.get(`https://corona.lmao.ninja/v2/states`)
             .then(function (response) {
                 // handle success
                 setStateData(response.data);

@@ -88,8 +88,14 @@ h2 {
   color: #B8BFB8;
 }
 
+.numRec {
+  color: #2DDC3B;
+}
+
+.numTodayRec {
+  color: #6DE8AD;
+}
 .recovered{
-  /* background-color: rgba(54, 214, 70, 0.5); */
   border-radius: 25px;
   color: #8A959C;
   padding: 0px 20px;

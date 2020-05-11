@@ -11,7 +11,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div className="SiteWrapper">
-      <Header />
+      {/* <Header /> */}
       <Router>
         <Switch>
           <Route path="/">
